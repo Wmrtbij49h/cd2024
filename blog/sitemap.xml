@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2024-04-26T08:59:43-00:00</lastmod>
+<lastmod>2024-04-26T09:02:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2024-04-26T08:59:43-00:00</lastmod>
+<lastmod>2024-04-26T09:02:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2024-04-26T08:59:43-00:00</lastmod>
+<lastmod>2024-04-26T09:02:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2024-04-26T08:59:43-00:00</lastmod>
+<lastmod>2024-04-26T09:02:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -47,7 +47,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./2024-Spring-w5-blog-tutorial.html</loc>
-<lastmod>2024-04-26T08:38:29+08:00</lastmod>
+<lastmod>2024-04-26T09:02:03+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -110,7 +110,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./category/w5.html</loc>
-<lastmod>2024-04-26T08:38:29+08:06</lastmod>
+<lastmod>2024-04-26T09:02:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -124,21 +124,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./tag/wang-zhi-bian-xie.html</loc>
-<lastmod>2024-04-26T08:59:28+08:06</lastmod>
+<lastmod>2024-04-26T09:02:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/pelican.html</loc>
-<lastmod>2024-04-26T08:59:28+08:06</lastmod>
+<lastmod>2024-04-26T09:02:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./author/41023108-41023211.html</loc>
-<lastmod>2024-04-26T08:59:28+08:06</lastmod>
+<lastmod>2024-04-26T09:02:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
