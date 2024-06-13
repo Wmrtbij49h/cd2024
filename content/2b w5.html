@@ -1,0 +1,463 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsimde_site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>41023211</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">41023211</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='cmsimde.html'>cmsimde</a><li><a href='Replit.html'>Replit</a><li><a href='Brython.html'>Brython</a><li class='has-children'><a href='practice.html'>practice</a><ul class='dropdown'><li><a href='W3 Task.html'>W3 Task</a><li><a href='w4 task.html'>w4 task</a><li><a href='w5 Task.html'>w5 Task</a><li><a href='w6 Task.html'>w6 Task</a><li><a href='w10 task程式.html'>w10 task程式</a><li><a href='w10 task影片.html'>w10 task影片</a></li></ul><li><a href='英翻中.html'>英翻中</a><li class='has-children'><a href='影片.html'>影片</a><ul class='dropdown'><li><a href='w1 setup.html'>w1 setup</a><li><a href='w1 odoo.html'>w1 odoo</a><li><a href='w1 2b 3.html'>w1 2b 3</a><li><a href='w1 2b 2.html'>w1 2b 2</a><li><a href='w1 2b 1.html'>w1 2b 1</a><li><a href='w1 2b 4.html'>w1 2b 4</a><li><a href='2b w5.html'>2b w5</a></li></ul><li><a href='期中報告.html'>期中報告</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+
+        </header>
+    <div id="tipue_search_content">w1 2b 4 << <a href='w1 2b 4.html'>Previous</a> <a href='期中報告.html'>Next</a> >> 期中報告<br /><h1>2b w5</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IvLtpn6uLEA?si=ORc6faxSK-hZoJbC" title="YouTube video player" width="560"></iframe></p>
+<p>1<br/>00:00:00,380 --&gt; 00:00:03,020<br/>那我們這個影片呢就是針對說。</p>
+<p>2<br/>00:00:04,370 --&gt; 00:00:06,570<br/>我們假如是筆電。</p>
+<p>3<br/>00:00:08,080 --&gt; 00:00:11,050<br/>OK。然後我們要</p>
+<p>4<br/>00:00:11,060 --&gt; 00:00:14,010<br/>怎麼樣？直接</p>
+<p>5<br/>00:00:14,020 --&gt; 00:00:15,920<br/>從這個電腦。</p>
+<p>6<br/>00:00:17,280 --&gt; 00:00:19,900<br/>那當然你必需要有兩臺電腦一臺電腦的</p>
+<p>7<br/>00:00:19,910 --&gt; 00:00:22,560<br/>網路是？直接給你的</p>
+<p>8<br/>00:00:22,570 --&gt; 00:00:24,570<br/>筆電。OK。</p>
+<p>9<br/>00:00:25,330 --&gt; 00:00:27,650<br/>然後，另外就是你必需要知道。</p>
+<p>10<br/>00:00:29,170 --&gt; 00:00:32,100<br/>到底這個你要下崽</p>
+<p>11<br/>00:00:32,110 --&gt; 00:00:34,500<br/>的。Nx</p>
+<p>12<br/>00:00:34,510 --&gt; 00:00:37,450<br/>1872在哪裡？好，那</p>
+<p>13<br/>00:00:37,460 --&gt; 00:00:39,870<br/>當然。你假如</p>
+<p>14<br/>00:00:39,880 --&gt; 00:00:42,650<br/>可以。知道說我們</p>
+<p>15<br/>00:00:42,660 --&gt; 00:00:44,670<br/>有哪些的目錄可以？</p>
+<p>16<br/>00:00:45,290 --&gt; 00:00:48,130<br/>直接移走的哈，因為我已經把他抓到這邊</p>
+<p>17<br/>00:00:48,140 --&gt; 00:00:51,050<br/>來。哪這裡面呢？這些</p>
+<p>18<br/>00:00:51,060 --&gt; 00:00:52,430<br/>目錄就是分別呀。</p>
+<p>19<br/>00:00:55,010 --&gt; 00:00:57,870<br/>可能他要轉成Cartier。</p>
+<p>20<br/>00:00:58,780 --&gt; 00:01:01,590<br/>好，然後這個是3D的這個</p>
+<p>21<br/>00:01:01,600 --&gt; 00:01:04,070<br/>檢測。然後這個</p>
+<p>22<br/>00:01:04,080 --&gt; 00:01:06,660<br/>可能是製造</p>
+<p>23<br/>00:01:06,690 --&gt; 00:01:09,620<br/>manufacturing哈，所以你看它這個是</p>
+<p>24<br/>00:01:09,780 --&gt; 00:01:12,140<br/>假如你是用啊這個。</p>
+<p>25<br/>00:01:13,030 --&gt; 00:01:15,910<br/>Kame的話，這個就一定要這2個一定要。</p>
+<p>26<br/>00:01:16,630 --&gt; 00:01:19,430<br/>好，那這個是做FEM的模擬。</p>
+<p>27<br/>00:01:20,000 --&gt; 00:01:22,870<br/>好，所以這些目錄啊，基本上我們已經幫你把</p>
+<p>28<br/>00:01:22,880 --&gt; 00:01:25,370<br/>他。便是出來</p>
+<p>29<br/>00:01:25,760 --&gt; 00:01:28,640<br/>那所需要的。你</p>
+<p>30<br/>00:01:28,650 --&gt; 00:01:31,030<br/>只要只是要來做</p>
+<p>31<br/>00:01:31,040 --&gt; 00:01:33,660<br/>這個零件啊，</p>
+<p>32<br/>00:01:33,670 --&gt; 00:01:35,490<br/>這個繪製跟。</p>
+<p>33<br/>00:01:36,500 --&gt; 00:01:39,300<br/>啊，這個分析的話，我們基本裳。</p>
+<p>34<br/>00:01:40,350 --&gt; 00:01:42,380<br/>這邊應該可以重新。</p>
+<p>35<br/>00:01:43,430 --&gt; 00:01:46,340<br/>把它這個肉之後啊，我們就可以</p>
+<p>36<br/>00:01:46,350 --&gt; 00:01:48,520<br/>看到很清楚的可以。</p>
+<p>37<br/>00:01:50,130 --&gt; 00:01:53,080<br/>這個是2BA我們還沒有</p>
+<p>38<br/>00:01:53,090 --&gt; 00:01:53,770<br/>丟上去嗎？</p>
+<p>39<br/>00:01:56,230 --&gt; 00:01:58,860<br/>我們還沒有丟上去嘛，我看一下。</p>
+<p>40<br/>00:02:00,920 --&gt; 00:02:03,590<br/>喔，真的還沒有丟，我們剛剛只在近端看</p>
+<p>41<br/>00:02:03,600 --&gt; 00:02:06,490<br/>哈哪近端的部分表示說</p>
+<p>42<br/>00:02:06,720 --&gt; 00:02:08,380<br/>啊，所以我們應該要把這個。</p>
+<p>43<br/>00:02:09,290 --&gt; 00:02:11,770<br/>現在就可以把它丟上去，所以我們這裡</p>
+<p>44<br/>00:02:11,780 --&gt; 00:02:14,640<br/>就是。那么？</p>
+<p>45<br/>00:02:15,200 --&gt; 00:02:18,180<br/>確定。我們這裡</p>
+<p>46<br/>00:02:18,190 --&gt; 00:02:19,150<br/>是確定。</p>
+<p>47<br/>00:02:21,350 --&gt; 00:02:24,280<br/>利用。Nx，我們是</p>
+<p>48<br/>00:02:24,290 --&gt; 00:02:25,320<br/>1872嘛。</p>
+<p>49<br/>00:02:27,530 --&gt; 00:02:28,400<br/>執行。</p>
+<p>50<br/>00:02:30,130 --&gt; 00:02:32,530<br/>我們是執行喔。</p>
+<p>51<br/>00:02:33,300 --&gt; 00:02:35,380<br/>實行零組件。</p>
+<p>52<br/>00:02:36,980 --&gt; 00:02:37,620<br/>繪圖。</p>
+<p>53<br/>00:02:39,670 --&gt; 00:02:42,500<br/>所需的。最小。</p>
+<p>54<br/>00:02:45,330 --&gt; 00:02:45,870<br/>配件。</p>
+<p>55<br/>00:02:48,410 --&gt; 00:02:51,090<br/>OK，好，所以意思就是說你。</p>
+<p>56<br/>00:02:52,440 --&gt; 00:02:55,370<br/>把那3道，大概7個左右就是我們</p>
+<p>57<br/>00:02:55,380 --&gt; 00:02:58,220<br/>要。進行處理的，所以我們在</p>
+<p>58<br/>00:02:58,230 --&gt; 00:02:59,650<br/>近端這邊看到的。</p>
+<p>59<br/>00:03:01,270 --&gt; 00:03:04,120<br/>那么基本上就是這些目錄</p>
+<p>60<br/>00:03:04,150 --&gt; 00:03:06,790<br/>分別啊，我們把他的</p>
+<p>61<br/>00:03:06,800 --&gt; 00:03:09,640<br/>這個目錄啊，內容大概</p>
+<p>62<br/>00:03:09,650 --&gt; 00:03:12,320<br/>多大，其實最大的就是。這個</p>
+<p>63<br/>00:03:12,350 --&gt; 00:03:15,260<br/>nx Bing這個一定要啊，還有</p>
+<p>64<br/>00:03:15,270 --&gt; 00:03:18,010<br/>一各UG哎，這2個，所以你可以看到</p>
+<p>65<br/>00:03:18,020 --&gt; 00:03:20,820<br/>就是。UGI跟nx</p>
+<p>66<br/>00:03:20,830 --&gt; 00:03:23,740<br/>Bing是最大的，所以其他的配件呢？</p>
+<p>67<br/>00:03:23,750 --&gt; 00:03:25,640<br/>整個加起來差不多7個左右。</p>
+<p>68<br/>00:03:26,480 --&gt; 00:03:29,410<br/>好，那我們把那亞好之後啊，我們已經</p>
+<p>69<br/>00:03:29,440 --&gt; 00:03:32,200<br/>送上去了。好，所以我們送</p>
+<p>70<br/>00:03:32,210 --&gt; 00:03:34,950<br/>上去。這個檔案啊，我們</p>
+<p>71<br/>00:03:35,040 --&gt; 00:03:37,400<br/>待會兒，其實你就可以直接在。</p>
+<p>72<br/>00:03:38,120 --&gt; 00:03:40,390<br/>喔，這個線往糟糕</p>
+<p>73<br/>00:03:40,780 --&gt; 00:03:43,100<br/>在這裡嘛，對。好，所以我們</p>
+<p>74<br/>00:03:43,110 --&gt; 00:03:45,770<br/>1.5基改呢，假如要的話。</p>
+<p>75<br/>00:03:46,420 --&gt; 00:03:48,770<br/>我們就可以直接把他。</p>
+<p>76<br/>00:03:50,210 --&gt; 00:03:51,730<br/>哇，那這邊。</p>
+<p>77<br/>00:03:53,770 --&gt; 00:03:56,380<br/>我們就必須要你登入了哈，因為這個是</p>
+<p>78<br/>00:03:56,390 --&gt; 00:03:59,140<br/>學校的。喔，學校的</p>
+<p>79<br/>00:03:59,150 --&gt; 00:04:02,080<br/>這個檔案哈，所以我們必須要不能是</p>
+<p>80<br/>00:04:02,090 --&gt; 00:04:04,780<br/>任何人。好，我們至少要讓你</p>
+<p>81<br/>00:04:04,790 --&gt; 00:04:07,610<br/>登入，然後你。就只能</p>
+<p>82<br/>00:04:07,620 --&gt; 00:04:09,910<br/>購下載好，所以我們把。</p>
+<p>83<br/>00:04:10,490 --&gt; 00:04:12,250<br/>這個連結啊，我們把他。</p>
+<p>84<br/>00:04:13,170 --&gt; 00:04:16,000<br/>放到我們的網誌好，所以你在這裡就可以</p>
+<p>85<br/>00:04:16,010 --&gt; 00:04:18,890<br/>看到說。我們是。</p>
+<p>86<br/>00:04:20,810 --&gt; 00:04:22,090<br/>你只要登入。</p>
+<p>87<br/>00:04:25,770 --&gt; 00:04:27,490<br/>那么是我們的team。</p>
+<p>88<br/>00:04:28,780 --&gt; 00:04:30,600<br/>喔，你登入到team之后。</p>
+<p>89<br/>00:04:31,970 --&gt; 00:04:34,740<br/>下宰。好，然後</p>
+<p>90<br/>00:04:34,750 --&gt; 00:04:37,700<br/>我們是要把它放到。這裡</p>
+<p>91<br/>00:04:37,710 --&gt; 00:04:40,570<br/>來。好，那這個對我們</p>
+<p>92<br/>00:04:40,580 --&gt; 00:04:43,480<br/>這個目錄的。應該是檔案</p>
+<p>93<br/>00:04:43,490 --&gt; 00:04:46,110<br/>的名稱啊，我們就直接可以。</p>
+<p>94<br/>00:04:46,880 --&gt; 00:04:48,490<br/>從線上取得。</p>
+<p>95<br/>00:04:50,310 --&gt; 00:04:52,110<br/>好，所以等於是有2個。</p>
+<p>96<br/>00:04:53,370 --&gt; 00:04:56,100<br/>地方可以拿到，假如你要自己做也可以啊</p>
+<p>97<br/>00:04:56,550 --&gt; 00:04:59,240<br/>喔，就是我們現在這個影片就是告訴你。</p>
+<p>98<br/>00:05:01,000 --&gt; 00:05:02,570<br/>我們是要。</p>
+<p>99<br/>00:05:04,020 --&gt; 00:05:06,970<br/>可以下宰這個。喔，</p>
+<p>100<br/>00:05:06,980 --&gt; 00:05:08,300<br/>但是你必須要登入啦。</p>
+<p>101<br/>00:05:11,270 --&gt; 00:05:12,160<br/>必需要。</p>
+<p>102<br/>00:05:14,190 --&gt; 00:05:17,070<br/>好，大概多啦，所以待會我們把他推上</p>
+<p>103<br/>00:05:17,080 --&gt; 00:05:17,980<br/>去之後，你應該。</p>
+<p>104<br/>00:05:19,660 --&gt; 00:05:22,480<br/>只要上課沒辦法下宰</p>
+<p>105<br/>00:05:22,490 --&gt; 00:05:24,500<br/>的話，你回去也可以載。</p>
+<p>106<br/>00:05:25,660 --&gt; 00:05:28,030<br/>好，所以我們就把他轉出來。</p>
+<p>107<br/>00:05:30,460 --&gt; 00:05:33,330<br/>然後假如還不放心的話，我們這邊</p>
+<p>108<br/>00:05:33,340 --&gt; 00:05:35,870<br/>轉彎了，你就可以直接在這裡</p>
+<p>109<br/>00:05:35,880 --&gt; 00:05:38,810<br/>看到。OK，因為我們現在是</p>
+<p>110<br/>00:05:38,820 --&gt; 00:05:41,120<br/>啟動這個靜態檢視。</p>
+<p>111<br/>00:05:41,790 --&gt; 00:05:43,680<br/>喔，所以你在這邊就可以看到。</p>
+<p>112<br/>00:05:44,960 --&gt; 00:05:47,320<br/>應該是OK啦，好，所以你就可以download。</p>
+<p>113<br/>00:05:48,740 --&gt; 00:05:51,590<br/>那你假如想要自己試著做</p>
+<p>114<br/>00:05:51,600 --&gt; 00:05:54,360<br/>的話。OK，你變成是</p>
+<p>115<br/>00:05:54,370 --&gt; 00:05:56,110<br/>我。筆電呢？</p>
+<p>116<br/>00:05:57,110 --&gt; 00:06:00,090<br/>自己接著。喔，這個對應</p>
+<p>117<br/>00:06:00,100 --&gt; 00:06:02,950<br/>的一個網路兩邊是同群的話，</p>
+<p>118<br/>00:06:02,960 --&gt; 00:06:04,800<br/>其實妳可以利用這個。</p>
+<p>119<br/>00:06:08,970 --&gt; 00:06:11,930<br/>然後你網路設好之後啊，就是動態</p>
+<p>120<br/>00:06:11,940 --&gt; 00:06:14,280<br/>去取啊，你就用IP config。</p>
+<p>121<br/>00:06:16,120 --&gt; 00:06:18,690<br/>然後你就可以看到你這一臺電腦。</p>
+<p>122<br/>00:06:20,620 --&gt; 00:06:23,500<br/>你這一臺電腦實體網卡的IP。</p>
+<p>123<br/>00:06:25,210 --&gt; 00:06:27,860<br/>OK那。知道這個IP</p>
+<p>124<br/>00:06:27,870 --&gt; 00:06:30,830<br/>之後啊，你要怎麼用？好這邊</p>
+<p>125<br/>00:06:30,840 --&gt; 00:06:33,770<br/>就秀一下，假設我扣到的，這個是我的</p>
+<p>126<br/>00:06:33,780 --&gt; 00:06:36,680<br/>IP。然後我故意啊，</p>
+<p>127<br/>00:06:37,030 --&gt; 00:06:39,990<br/>利用。近端的這個部分</p>
+<p>128<br/>00:06:40,150 --&gt; 00:06:42,500<br/>啊，因為我現在並沒有啟動我的</p>
+<p>129<br/>00:06:42,790 --&gt; 00:06:45,660<br/>阿進端的可吸嘛，因為我剛才是。</p>
+<p>130<br/>00:06:46,440 --&gt; 00:06:48,590<br/>直接從F這邊那。</p>
+<p>131<br/>00:06:49,500 --&gt; 00:06:52,070<br/>拿到，呃，這個我把它先關掉。</p>
+<p>132<br/>00:06:52,940 --&gt; 00:06:55,730<br/>我從這裡把它關掉，然後我要啟動</p>
+<p>133<br/>00:06:55,740 --&gt; 00:06:58,160<br/>我的可吸。好，因為我要</p>
+<p>134<br/>00:06:58,190 --&gt; 00:07:01,060<br/>克隆。對應的這個系統</p>
+<p>135<br/>00:07:01,070 --&gt; 00:07:03,980<br/>給你看到底要怎麼樣在近端把他啟動起來？</p>
+<p>136<br/>00:07:04,650 --&gt; 00:07:07,230<br/>好，所以我們就可以啊，直接在。</p>
+<p>137<br/>00:07:09,080 --&gt; 00:07:11,990<br/>任何一各好，那我現在是想要把它。</p>
+<p>138<br/>00:07:12,740 --&gt; 00:07:15,490<br/>利用這個誒，所以我切換到C槽，</p>
+<p>139<br/>00:07:15,680 --&gt; 00:07:18,230<br/>我要在temp那其實你只要</p>
+<p>140<br/>00:07:18,240 --&gt; 00:07:20,960<br/>克隆。我們</p>
+<p>141<br/>00:07:20,970 --&gt; 00:07:23,680<br/>對應的啊，因為你只是要</p>
+<p>142<br/>00:07:23,850 --&gt; 00:07:26,820<br/>抓檔案而已嘛。所以你可以從</p>
+<p>143<br/>00:07:26,830 --&gt; 00:07:29,730<br/>GitHub這邊呢？你</p>
+<p>144<br/>00:07:29,740 --&gt; 00:07:32,080<br/>直接把我們smd site。</p>
+<p>145<br/>00:07:34,020 --&gt; 00:07:36,810<br/>把他抓下來。哦，那</p>
+<p>146<br/>00:07:36,820 --&gt; 00:07:39,550<br/>意思就是說，其實任何一各我們的網際</p>
+<p>147<br/>00:07:39,560 --&gt; 00:07:42,420<br/>的倉儲啊都可以。利用</p>
+<p>148<br/>00:07:42,430 --&gt; 00:07:44,270<br/>外部IP來啟動伺服器。</p>
+<p>149<br/>00:07:45,460 --&gt; 00:07:48,430<br/>那一旦啟動之後，你又知道它的IP，又知道它的</p>
+<p>150<br/>00:07:48,440 --&gt; 00:07:50,610<br/>管理密碼，你就可以把檔案送過來。</p>
+<p>151<br/>00:07:51,330 --&gt; 00:07:54,260<br/>好，所以意思就是說看你要接受檔案的</p>
+<p>152<br/>00:07:54,270 --&gt; 00:07:57,120<br/>部分。你就可以直接拿到，</p>
+<p>153<br/>00:07:57,150 --&gt; 00:08:00,140<br/>其實你可以用CD 2024或者是分組</p>
+<p>154<br/>00:08:00,150 --&gt; 00:08:02,890<br/>網站來做都可以。好，所以假設我</p>
+<p>155<br/>00:08:02,900 --&gt; 00:08:05,480<br/>到CMSIMD的塞。</p>
+<p>156<br/>00:08:06,310 --&gt; 00:08:09,210<br/>問題是，你必需要。用外部IP</p>
+<p>157<br/>00:08:09,220 --&gt; 00:08:12,040<br/>來設定對不對？好，所以它的做法是</p>
+<p>158<br/>00:08:12,050 --&gt; 00:08:14,990<br/>這樣。就是當我知道我</p>
+<p>159<br/>00:08:15,000 --&gt; 00:08:17,080<br/>已經把我的倉儲。</p>
+<p>160<br/>00:08:17,850 --&gt; 00:08:20,800<br/>抓下來，任何一個都可以，只要有我們的系統</p>
+<p>161<br/>00:08:20,810 --&gt; 00:08:23,550<br/>就可以。好，然後你現在就是要</p>
+<p>162<br/>00:08:23,560 --&gt; 00:08:25,590<br/>去修改這個IT點PY？</p>
+<p>163<br/>00:08:26,590 --&gt; 00:08:29,400<br/>OK，然後把我們外部IP啊。</p>
+<p>164<br/>00:08:30,280 --&gt; 00:08:33,180<br/>換過來。好，那這個是很</p>
+<p>165<br/>00:08:33,190 --&gt; 00:08:34,950<br/>重要的一個機制，就是說。</p>
+<p>166<br/>00:08:36,170 --&gt; 00:08:39,100<br/>你只要拿到我們的任何一</p>
+<p>167<br/>00:08:39,110 --&gt; 00:08:42,000<br/>各倉儲。然後他的IP</p>
+<p>168<br/>00:08:42,010 --&gt; 00:08:43,370<br/>只要是外部IP。</p>
+<p>169<br/>00:08:44,850 --&gt; 00:08:46,560<br/>然後你把它存起來之后。</p>
+<p>170<br/>00:08:48,500 --&gt; 00:08:51,310<br/>你再回到你剛才的目錄</p>
+<p>171<br/>00:08:51,320 --&gt; 00:08:53,180<br/>下，你給他CNS。</p>
+<p>172<br/>00:08:54,210 --&gt; 00:08:55,670<br/>他防火牆唉呦。</p>
+<p>173<br/>00:08:56,800 --&gt; 00:08:57,470<br/>糟糕。</p>
+<p>174<br/>00:08:59,800 --&gt; 00:09:02,210<br/>要求的位置不正確。</p>
+<p>175<br/>00:09:03,760 --&gt; 00:09:06,510<br/>哇，他照理出</p>
+<p>176<br/>00:09:07,160 --&gt; 00:09:08,900<br/>19，443嘛。</p>
+<p>177<br/>00:09:10,670 --&gt; 00:09:12,380<br/>And。</p>
+<p>178<br/>00:09:16,400 --&gt; 00:09:19,310<br/>哎，我，我這邊不曉得發生甚麼問題。</p>
+<p>179<br/>00:09:21,200 --&gt; 00:09:23,770<br/>內容要求的位置不正確。</p>
+<p>180<br/>00:09:25,100 --&gt; 00:09:26,400<br/>我被你現在看啊。</p>
+<p>181<br/>00:09:30,720 --&gt; 00:09:31,690<br/>還可以。</p>
+<p>182<br/>00:09:33,980 --&gt; 00:09:36,810<br/>哦，不曉得是不是因為</p>
+<p>183<br/>00:09:36,820 --&gt; 00:09:37,130<br/>我？</p>
+<p>184<br/>00:09:40,430 --&gt; 00:09:42,180<br/>是因為他這個。</p>
+<p>185<br/>00:09:43,960 --&gt; 00:09:45,820<br/>就是是三。</p>
+<p>186<br/>00:09:49,430 --&gt; 00:09:51,950<br/>所以我現在這邊不知道是哪裡出錯。</p>
+<p>187<br/>00:09:53,520 --&gt; 00:09:56,330<br/>理論上他應該是我</p>
+<p>188<br/>00:09:56,340 --&gt; 00:09:57,660<br/>講，我再恢復一下看。</p>
+<p>189<br/>00:09:59,370 --&gt; 00:10:01,160<br/>要恢復的話，我用。</p>
+<p>190<br/>00:10:04,550 --&gt; 00:10:07,310<br/>好用這樣。我試試看我</p>
+<p>191<br/>00:10:07,320 --&gt; 00:10:08,620<br/>近端的部分。</p>
+<p>192<br/>00:10:10,390 --&gt; 00:10:13,180<br/>哪裡出問題？因為這個</p>
+<p>193<br/>00:10:13,190 --&gt; 00:10:13,900<br/>可以呀。</p>
+<p>194<br/>00:10:16,110 --&gt; 00:10:18,440<br/>所以我現在的IP。</p>
+<p>195<br/>00:10:20,960 --&gt; 00:10:23,800<br/>And我不確定現在發生什麼問題。</p>
+<p>196<br/>00:10:27,140 --&gt; 00:10:29,950<br/>好，因為照講這個講是我的外部IP</p>
+<p>197<br/>00:10:29,960 --&gt; 00:10:30,310<br/>的話。</p>
+<p>198<br/>00:10:35,280 --&gt; 00:10:36,940<br/>好，我再一次IP。</p>
+<p>199<br/>00:10:41,750 --&gt; 00:10:44,670<br/>And，哦，現在他給我</p>
+<p>200<br/>00:10:44,680 --&gt; 00:10:47,410<br/>這個。好，我們</p>
+<p>201<br/>00:10:47,420 --&gt; 00:10:47,920<br/>抓抓看。</p>
+<p>202<br/>00:10:54,250 --&gt; 00:10:55,710<br/>好在把它存起來。</p>
+<p>203<br/>00:10:57,480 --&gt; 00:10:58,960<br/>好，我們再啟動一次看。</p>
+<p>204<br/>00:11:01,220 --&gt; 00:11:03,680<br/>好，可以了好，所以剛才可能</p>
+<p>205<br/>00:11:03,800 --&gt; 00:11:06,610<br/>我們在操作的過程啊，他給我們</p>
+<p>206<br/>00:11:06,620 --&gt; 00:11:09,430<br/>另外一個IP好，所以意思就是說你用</p>
+<p>207<br/>00:11:09,440 --&gt; 00:11:12,250<br/>IP config渠道的話。你</p>
+<p>208<br/>00:11:12,260 --&gt; 00:11:15,200<br/>只需要把IT點PY</p>
+<p>209<br/>00:11:15,210 --&gt; 00:11:17,790<br/>啊。裡面的這個改成外部</p>
+<p>210<br/>00:11:17,800 --&gt; 00:11:20,450<br/>IP喔，就是你現在這臺電腦渠道了，</p>
+<p>211<br/>00:11:20,780 --&gt; 00:11:23,410<br/>他一旦啟動防火牆啊，你</p>
+<p>212<br/>00:11:23,420 --&gt; 00:11:25,990<br/>就可以用這個。任何人。</p>
+<p>213<br/>00:11:26,870 --&gt; 00:11:28,690<br/>只要你防火牆沒有黨他。</p>
+<p>214<br/>00:11:30,360 --&gt; 00:11:32,550<br/>OK，所以你這樣子連線。</p>
+<p>215<br/>00:11:35,870 --&gt; 00:11:38,780<br/>OK你就可以直接那我這一臺</p>
+<p>216<br/>00:11:38,790 --&gt; 00:11:41,590<br/>現在943有可能是。啊，</p>
+<p>217<br/>00:11:41,600 --&gt; 00:11:44,340<br/>這個防火牆會擋的。所以你假如</p>
+<p>218<br/>00:11:44,350 --&gt; 00:11:47,270<br/>待會，你要是。喔，</p>
+<p>219<br/>00:11:47,280 --&gt; 00:11:50,050<br/>待會你要是。因為這樣的話，我</p>
+<p>220<br/>00:11:50,060 --&gt; 00:11:52,830<br/>就可以把。檔案上傳起來</p>
+<p>221<br/>00:11:52,900 --&gt; 00:11:54,300<br/>啊，比方說我剛才。</p>
+<p>222<br/>00:11:55,380 --&gt; 00:11:58,110<br/>假如是在C的temp</p>
+<p>223<br/>00:11:58,120 --&gt; 00:12:00,750<br/>下，對吧？我要把這個檔案</p>
+<p>224<br/>00:12:01,200 --&gt; 00:12:04,090<br/>從A點傳到v點。有沒有</p>
+<p>225<br/>00:12:04,100 --&gt; 00:12:06,870<br/>他這邊就一直傳，所以你在近端的</p>
+<p>226<br/>00:12:06,880 --&gt; 00:12:09,700<br/>速度啊。可能比這個慢一點了哈，</p>
+<p>227<br/>00:12:09,710 --&gt; 00:12:12,380<br/>但是應該是OK的。但是你必須要</p>
+<p>228<br/>00:12:12,390 --&gt; 00:12:15,240<br/>注意到就是你的防火牆兩端的防火牆啊</p>
+<p>229<br/>00:12:15,250 --&gt; 00:12:18,090<br/>必須要是開的。好，所以我們必須要</p>
+<p>230<br/>00:12:18,100 --&gt; 00:12:20,430<br/>跑道系統。假如你</p>
+<p>231<br/>00:12:20,440 --&gt; 00:12:23,090<br/>9443，你不曉得怎麼設定啊，你就</p>
+<p>232<br/>00:12:23,100 --&gt; 00:12:25,910<br/>暫時把他關掉。啊，這兩邊你就</p>
+<p>233<br/>00:12:25,920 --&gt; 00:12:28,910<br/>暫時把他關掉。所以換句話說，</p>
+<p>234<br/>00:12:28,940 --&gt; 00:12:31,920<br/>我這邊講到防火牆已經關掉了。你</p>
+<p>235<br/>00:12:31,930 --&gt; 00:12:34,920<br/>也可以從我這裡。啊，我去</p>
+<p>236<br/>00:12:34,930 --&gt; 00:12:37,280<br/>編輯他，然後我這邊什麼都不要。</p>
+<p>237<br/>00:12:38,070 --&gt; 00:12:40,730<br/>我只需要讓你可以抓到我的這個</p>
+<p>238<br/>00:12:40,740 --&gt; 00:12:43,660<br/>檔案。好，所以</p>
+<p>239<br/>00:12:43,670 --&gt; 00:12:46,480<br/>我已經有這個了嘛，所以我就可以直接把</p>
+<p>240<br/>00:12:46,490 --&gt; 00:12:49,220<br/>它放到這邊。好，所以你</p>
+<p>241<br/>00:12:49,230 --&gt; 00:12:51,070<br/>假如目前你的電腦？</p>
+<p>242<br/>00:12:52,030 --&gt; 00:12:54,980<br/>可以連到我這一臺的話，也就是這個IP。</p>
+<p>243<br/>00:12:55,580 --&gt; 00:12:58,120<br/>你就可以把他。抓走。</p>
+<p>244<br/>00:12:58,820 --&gt; 00:13:01,650<br/>喔，你就可以看到這個你按你就可以把他抓走。</p>
+<p>245<br/>00:13:02,460 --&gt; 00:13:05,380<br/>好，所以我現在把這個秀出來，你可以</p>
+<p>246<br/>00:13:05,390 --&gt; 00:13:08,330<br/>連連看啊，那你那邊的防火牆也不能夠</p>
+<p>247<br/>00:13:08,340 --&gt; 00:13:11,260<br/>檔。他的風暴出來，所以你</p>
+<p>248<br/>00:13:11,270 --&gt; 00:13:14,080<br/>進到我這個網站，你就可以把above</p>
+<p>249<br/>00:13:14,090 --&gt; 00:13:17,070<br/>下面的這個檔案把他帶走。啊，大概是</p>
+<p>250<br/>00:13:17,080 --&gt; 00:13:19,950<br/>這樣，所以意思就是說，你只要確定你拿到的是</p>
+<p>251<br/>00:13:19,960 --&gt; 00:13:22,540<br/>外部IP，因為這個學期啊，我們。</p>
+<p>252<br/>00:13:23,850 --&gt; 00:13:26,640<br/>好，基本裳就是哎，我這邊。</p>
+<p>253<br/>00:13:27,990 --&gt; 00:13:30,960<br/>我剛才可能一伴，我不曉得這邊是。</p>
+<p>254<br/>00:13:33,140 --&gt; 00:13:36,010<br/>做到一半，我把他關掉，然後，所以我這邊先</p>
+<p>255<br/>00:13:36,020 --&gt; 00:13:38,840<br/>在關掉一夏。然後</p>
+<p>256<br/>00:13:38,850 --&gt; 00:13:41,800<br/>我在CS起來。好，那這樣的話</p>
+<p>257<br/>00:13:41,810 --&gt; 00:13:44,760<br/>應該你就可以連接到好，所以我</p>
+<p>258<br/>00:13:44,770 --&gt; 00:13:47,550<br/>現在的IP啊是這個。哦，</p>
+<p>259<br/>00:13:47,560 --&gt; 00:13:50,340<br/>所以你只要https然後到</p>
+<p>260<br/>00:13:50,350 --&gt; 00:13:53,170<br/>93應該就可以看到啊。那兩邊的</p>
+<p>261<br/>00:13:53,180 --&gt; 00:13:55,900<br/>防火牆都樂開，理論上應該是</p>
+<p>262<br/>00:13:55,930 --&gt; 00:13:58,640<br/>9443兩邊的不好，一開</p>
+<p>263<br/>00:13:58,650 --&gt; 00:14:01,320<br/>就可以了喔，那你就可以逮到這個答案，</p>
+<p>264<br/>00:14:01,590 --&gt; 00:14:04,440<br/>那我現在就從這裡，我就可以看到有</p>
+<p>265<br/>00:14:04,450 --&gt; 00:14:07,320<br/>誰憐，假如你待會連的話，我這邊就可以</p>
+<p>266<br/>00:14:07,330 --&gt; 00:14:10,320<br/>看到好，那我就把這個影片呢，我也</p>
+<p>267<br/>00:14:10,330 --&gt; 00:14:11,150<br/>把它存起來。</p><br />w1 2b 4 << <a href='w1 2b 4.html'>Previous</a> <a href='期中報告.html'>Next</a> >> 期中報告</div>
+
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
