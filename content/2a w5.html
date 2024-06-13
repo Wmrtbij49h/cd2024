@@ -1,0 +1,463 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsimde_site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>41023211</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">41023211</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='cmsimde.html'>cmsimde</a><li><a href='Replit.html'>Replit</a><li><a href='Brython.html'>Brython</a><li class='has-children'><a href='practice.html'>practice</a><ul class='dropdown'><li><a href='W3 Task.html'>W3 Task</a><li><a href='w4 task.html'>w4 task</a><li><a href='w5 Task.html'>w5 Task</a><li><a href='w6 Task.html'>w6 Task</a><li><a href='w10 task程式.html'>w10 task程式</a><li><a href='w10 task影片.html'>w10 task影片</a></li></ul><li><a href='英翻中.html'>英翻中</a><li class='has-children'><a href='影片.html'>影片</a><ul class='dropdown'><li><a href='w1 setup.html'>w1 setup</a><li><a href='w1 odoo.html'>w1 odoo</a><li><a href='w1 2b 3.html'>w1 2b 3</a><li><a href='w1 2b 2.html'>w1 2b 2</a><li><a href='w1 2b 1.html'>w1 2b 1</a><li><a href='w1 2b 4.html'>w1 2b 4</a><li><a href='2b w5.html'>2b w5</a><li><a href='2a w5.html'>2a w5</a></li></ul><li><a href='期中報告.html'>期中報告</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+
+        </header>
+    <div id="tipue_search_content">2b w5 << <a href='2b w5.html'>Previous</a> <a href='期中報告.html'>Next</a> >> 期中報告<br /><h1>2a w5</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9U3vysu9Y28?si=kdHjRjwbuwu_v7hu" title="YouTube video player" width="560"></iframe></p>
+<p>1<br/>00:00:00,370 --&gt; 00:00:03,340<br/>在協同產品設計實習</p>
+<p>2<br/>00:00:03,350 --&gt; 00:00:06,110<br/>啊，今天是2A的。第五</p>
+<p>3<br/>00:00:06,120 --&gt; 00:00:08,730<br/>周。那我們現在就要</p>
+<p>4<br/>00:00:08,760 --&gt; 00:00:09,850<br/>利用這個。</p>
+<p>5<br/>00:00:13,020 --&gt; 00:00:15,490<br/>團隊下面那我們有一個</p>
+<p>6<br/>00:00:15,600 --&gt; 00:00:17,330<br/>名稱叫做AG萬。</p>
+<p>7<br/>00:00:18,400 --&gt; 00:00:20,770<br/>那么這個AG玩下面它有</p>
+<p>8<br/>00:00:21,040 --&gt; 00:00:23,290<br/>萬萬的這個權限。</p>
+<p>9<br/>00:00:25,230 --&gt; 00:00:28,100<br/>然後我現在是從這個Chrome</p>
+<p>10<br/>00:00:28,110 --&gt; 00:00:31,060<br/>這邊呢？我利用scratch玩的</p>
+<p>11<br/>00:00:31,070 --&gt; 00:00:32,440<br/>權限，把。</p>
+<p>12<br/>00:00:33,410 --&gt; 00:00:36,140<br/>這個。分組的</p>
+<p>13<br/>00:00:36,150 --&gt; 00:00:38,560<br/>倉儲啊，我把它import到我的。</p>
+<p>14<br/>00:00:39,370 --&gt; 00:00:42,120<br/>啊，這個那么帳號下面就是</p>
+<p>15<br/>00:00:42,130 --&gt; 00:00:44,920<br/>rap啊，就是rap。我</p>
+<p>16<br/>00:00:44,930 --&gt; 00:00:47,680<br/>現在是在rap下面，然後我是scratch</p>
+<p>17<br/>00:00:47,690 --&gt; 00:00:50,500<br/>玩，然後這個是分組的倉儲，可是</p>
+<p>18<br/>00:00:50,510 --&gt; 00:00:53,500<br/>我沒有權限。那沒有權限的原因</p>
+<p>19<br/>00:00:53,510 --&gt; 00:00:56,360<br/>是，其實我之前已經有做了</p>
+<p>20<br/>00:00:56,370 --&gt; 00:00:59,240<br/>這個設定好，然後我現在</p>
+<p>21<br/>00:00:59,250 --&gt; 00:01:01,860<br/>把。隱藏的檔案呢？因為</p>
+<p>22<br/>00:01:01,870 --&gt; 00:01:04,860<br/>點gate它是隱藏的，所以你必須要把它</p>
+<p>23<br/>00:01:04,910 --&gt; 00:01:07,540<br/>打開來。好，所以我們把這個</p>
+<p>24<br/>00:01:07,550 --&gt; 00:01:10,490<br/>隱藏的檔案秀出來之後啊，我們看</p>
+<p>25<br/>00:01:10,500 --&gt; 00:01:13,240<br/>一下他目前的這個協定，他是寫在</p>
+<p>26<br/>00:01:13,280 --&gt; 00:01:16,050<br/>點get。它是寫在</p>
+<p>27<br/>00:01:16,060 --&gt; 00:01:19,060<br/>點gate裡面的config。好，</p>
+<p>28<br/>00:01:19,070 --&gt; 00:01:21,980<br/>所以你今天假如在分組上，你還是想要</p>
+<p>29<br/>00:01:21,990 --&gt; 00:01:24,820<br/>用。這個Ripley，或者是你</p>
+<p>30<br/>00:01:24,830 --&gt; 00:01:27,670<br/>在近端的話，你就要處理這個權限</p>
+<p>31<br/>00:01:27,680 --&gt; 00:01:30,600<br/>地的問題。啊，可是你到底是</p>
+<p>32<br/>00:01:30,610 --&gt; 00:01:33,340<br/>用什麼方式來維護它是</p>
+<p>33<br/>00:01:33,350 --&gt; 00:01:35,110<br/>https加token嘛？</p>
+<p>34<br/>00:01:35,730 --&gt; 00:01:38,580<br/>還是SSH？那</p>
+<p>35<br/>00:01:38,590 --&gt; 00:01:41,350<br/>當然你假如想要利用這個來做token</p>
+<p>36<br/>00:01:41,360 --&gt; 00:01:44,300<br/>的話。那么他其實</p>
+<p>37<br/>00:01:44,310 --&gt; 00:01:46,990<br/>是任何人都更可以看得到你的token。</p>
+<p>38<br/>00:01:47,790 --&gt; 00:01:50,510<br/>OK，好，所以這裡是不能用</p>
+<p>39<br/>00:01:50,690 --&gt; 00:01:53,310<br/>token在Ripley上面是不能用token。</p>
+<p>40<br/>00:01:54,050 --&gt; 00:01:56,990<br/>好，所以我們的另外一個選擇就是說好吧，那我</p>
+<p>41<br/>00:01:56,1000 --&gt; 00:01:59,890<br/>就我就使用這個SSH的</p>
+<p>42<br/>00:01:59,900 --&gt; 00:02:02,890<br/>格式。好那H的格式就是說</p>
+<p>43<br/>00:02:02,900 --&gt; 00:02:05,810<br/>我的host，我是我是用</p>
+<p>44<br/>00:02:05,1000 --&gt; 00:02:08,750<br/>啊，我的user是用這個點</p>
+<p>45<br/>00:02:08,760 --&gt; 00:02:11,040<br/>get。然後我的這個</p>
+<p>46<br/>00:02:11,270 --&gt; 00:02:14,130<br/>那么session，也就是這個是host</p>
+<p>47<br/>00:02:14,140 --&gt; 00:02:17,010<br/>的名稱啊，在config裡面，然後</p>
+<p>48<br/>00:02:17,020 --&gt; 00:02:18,890<br/>記得你用SSH認識嘛哈。</p>
+<p>49<br/>00:02:19,800 --&gt; 00:02:22,430<br/>好，所以我們現在就是要來處理這個權限。</p>
+<p>50<br/>00:02:23,440 --&gt; 00:02:26,310<br/>那么要處理這個權限呢，你就必須</p>
+<p>51<br/>00:02:26,320 --&gt; 00:02:29,060<br/>要。應該是有</p>
+<p>52<br/>00:02:29,070 --&gt; 00:02:32,070<br/>兩種選擇啦，哈，你。你</p>
+<p>53<br/>00:02:32,080 --&gt; 00:02:35,050<br/>應該是可以在近端做好把</p>
+<p>54<br/>00:02:35,060 --&gt; 00:02:37,630<br/>資料傳上去，或者直接</p>
+<p>55<br/>00:02:37,640 --&gt; 00:02:40,550<br/>在啊，這個，那么Linux上面</p>
+<p>56<br/>00:02:40,560 --&gt; 00:02:43,490<br/>來下指令好，那我現在選擇我要</p>
+<p>57<br/>00:02:43,500 --&gt; 00:02:46,490<br/>用近端的菩提來做。好，所以</p>
+<p>58<br/>00:02:46,500 --&gt; 00:02:49,250<br/>我現在啟動之後啊，我的系統就有</p>
+<p>59<br/>00:02:49,280 --&gt; 00:02:51,010<br/>可惜環境裡面有Putin。</p>
+<p>60<br/>00:02:52,180 --&gt; 00:02:54,670<br/>啊，可是假如是你用portable的，</p>
+<p>61<br/>00:02:54,680 --&gt; 00:02:57,250<br/>這個跟我這邊一樣啊，你是</p>
+<p>62<br/>00:02:57,260 --&gt; 00:02:59,300<br/>用？Portable</p>
+<p>63<br/>00:02:59,310 --&gt; 00:03:01,970<br/> 2024的話。啊，</p>
+<p>64<br/>00:03:01,980 --&gt; 00:03:04,610<br/>那么特別要注意啦哈，因為我們之前</p>
+<p>65<br/>00:03:04,640 --&gt; 00:03:07,310<br/>打造的時候啊，是在這邊</p>
+<p>66<br/>00:03:07,320 --&gt; 00:03:10,170<br/>給IPV四的聯外</p>
+<p>67<br/>00:03:10,180 --&gt; 00:03:12,860<br/>之前啊，所以你假如</p>
+<p>68<br/>00:03:12,960 --&gt; 00:03:15,550<br/>看這個？在我們home</p>
+<p>69<br/>00:03:15,560 --&gt; 00:03:18,270<br/>裡面呢啊在我們這個home裡面的</p>
+<p>70<br/>00:03:18,280 --&gt; 00:03:21,280<br/>點gameconfig。好那上學，這個</p>
+<p>71<br/>00:03:21,290 --&gt; 00:03:23,830<br/>是用之前呢？你想要直接下載沒有改</p>
+<p>72<br/>00:03:23,840 --&gt; 00:03:26,500<br/>的話，它這個上面是有proxy的。</p>
+<p>73<br/>00:03:27,410 --&gt; 00:03:30,180<br/>OK，所以你。假如你要在</p>
+<p>74<br/>00:03:30,190 --&gt; 00:03:33,180<br/>近端處理的話喔，你必須要把</p>
+<p>75<br/>00:03:33,190 --&gt; 00:03:35,460<br/>portable 2024的這個點get。</p>
+<p>76<br/>00:03:36,060 --&gt; 00:03:38,820<br/>好下面的這個proxy，也就是這個。</p>
+<p>77<br/>00:03:39,530 --&gt; 00:03:42,500<br/>下面他在home IPV六下，</p>
+<p>78<br/>00:03:42,510 --&gt; 00:03:45,240<br/>假如你是用IPV六的這個</p>
+<p>79<br/>00:03:45,490 --&gt; 00:03:48,220<br/>批次檔啟動的話，你要看一下這個</p>
+<p>80<br/>00:03:48,570 --&gt; 00:03:51,320<br/>點，gameconfig裡面不能有Plus，因為我們</p>
+<p>81<br/>00:03:51,330 --&gt; 00:03:53,800<br/>現在每一臺都友誼個獨立的</p>
+<p>82<br/>00:03:53,890 --&gt; 00:03:56,870<br/>聯外的IPV 4，所以這個學期是不用。</p>
+<p>83<br/>00:03:57,480 --&gt; 00:04:00,250<br/>代理主機的啊，所以這個要特別注意，</p>
+<p>84<br/>00:04:00,660 --&gt; 00:04:03,250<br/>好，那我們現在是要用菩提，所以</p>
+<p>85<br/>00:04:03,260 --&gt; 00:04:06,040<br/>我們是進到這裡面呢，我們用菩提</p>
+<p>86<br/>00:04:06,050 --&gt; 00:04:08,310<br/>來見嗄？他的這個對應。</p>
+<p>87<br/>00:04:09,090 --&gt; 00:04:12,080<br/>那因為現在件好的這個權限啊，我們是要</p>
+<p>88<br/>00:04:12,090 --&gt; 00:04:14,930<br/>丟到上面對。好，所以你</p>
+<p>89<br/>00:04:14,940 --&gt; 00:04:17,830<br/>必須要知道格式好，所以我們先把</p>
+<p>90<br/>00:04:17,840 --&gt; 00:04:20,790<br/>它建立一個，所以我們利用pootie件之後啊，</p>
+<p>91<br/>00:04:20,800 --&gt; 00:04:22,900<br/>我們就可以點這個January。</p>
+<p>92<br/>00:04:23,760 --&gt; 00:04:26,730<br/>好，我想這個應該沒問題啦哈，但是我們</p>
+<p>93<br/>00:04:26,740 --&gt; 00:04:29,650<br/>現在是要拿到啊，這個rap來用</p>
+<p>94<br/>00:04:29,660 --&gt; 00:04:32,530<br/>了好，所以格式的部分必須是正確</p>
+<p>95<br/>00:04:32,540 --&gt; 00:04:34,970<br/>的好，所以我們在這邊基本裳。</p>
+<p>96<br/>00:04:36,900 --&gt; 00:04:39,860<br/>把他這個弄好之後啊，我們就拿到</p>
+<p>97<br/>00:04:39,920 --&gt; 00:04:42,780<br/>open SSH的public key。好，那</p>
+<p>98<br/>00:04:42,790 --&gt; 00:04:45,440<br/>我們是把這個power key呀，把它叫做</p>
+<p>99<br/>00:04:45,450 --&gt; 00:04:48,450<br/>鎖頭嘛喔，所以你現在的房間</p>
+<p>100<br/>00:04:48,460 --&gt; 00:04:51,440<br/>是在GitHub，也就是我們要動我們的</p>
+<p>101<br/>00:04:51,450 --&gt; 00:04:53,960<br/>分組倉儲好，所以我們必須要把</p>
+<p>102<br/>00:04:53,970 --&gt; 00:04:56,310<br/>這個啊，這個鎖頭把他。</p>
+<p>103<br/>00:04:58,130 --&gt; 00:05:01,060<br/>鎖上去啊，就是把它裝上去，所以我們</p>
+<p>104<br/>00:05:01,070 --&gt; 00:05:03,810<br/>ctrl C之後啊，我們就要跑到</p>
+<p>105<br/>00:05:03,930 --&gt; 00:05:05,040<br/>對應的這個。</p>
+<p>106<br/>00:05:06,740 --&gt; 00:05:09,720<br/>Scratch玩，我們現在要。登記</p>
+<p>107<br/>00:05:09,730 --&gt; 00:05:12,660<br/>在他的這個倉儲底下，因為我們是</p>
+<p>108<br/>00:05:12,670 --&gt; 00:05:15,560<br/>對分組倉儲是有權限的啊，所以</p>
+<p>109<br/>00:05:15,570 --&gt; 00:05:18,540<br/>是在這裡。是在這裡，對吧？好，</p>
+<p>110<br/>00:05:18,550 --&gt; 00:05:20,980<br/>所以我們的格式要對，因為他只接受open</p>
+<p>111<br/>00:05:20,990 --&gt; 00:05:23,720<br/>SSH好，所以我們就把這個</p>
+<p>112<br/>00:05:23,750 --&gt; 00:05:26,420<br/>我們講說這個是呃第五</p>
+<p>113<br/>00:05:26,430 --&gt; 00:05:29,400<br/>周。然後是CD 2</p>
+<p>114<br/>00:05:29,400 --&gt; 00:05:32,090<br/>A的好註記一下。好，然後</p>
+<p>115<br/>00:05:32,100 --&gt; 00:05:34,970<br/>這邊貼上來好，所以你把這個鎖頭啊</p>
+<p>116<br/>00:05:34,980 --&gt; 00:05:37,900<br/>裝載你的倉儲的門外。啊，那</p>
+<p>117<br/>00:05:37,910 --&gt; 00:05:40,800<br/>剩下來的就是想辦法要對應</p>
+<p>118<br/>00:05:40,810 --&gt; 00:05:43,530<br/>這個權限。好，那我們這邊</p>
+<p>119<br/>00:05:43,560 --&gt; 00:05:46,120<br/>還是先把近端的啊，</p>
+<p>120<br/>00:05:46,130 --&gt; 00:05:48,890<br/>這個。菩提的prokey先</p>
+<p>121<br/>00:05:48,900 --&gt; 00:05:51,810<br/>存起來。好，所以我這邊應該在</p>
+<p>122<br/>00:05:51,820 --&gt; 00:05:54,770<br/>y啊，我有帶著一個歪兔，我有帶著</p>
+<p>123<br/>00:05:54,780 --&gt; 00:05:57,740<br/>一各，那么這邊應該會有一個</p>
+<p>124<br/>00:05:57,750 --&gt; 00:05:59,100<br/>key吧？我看一下。</p>
+<p>125<br/>00:06:00,700 --&gt; 00:06:03,240<br/>我是在存在F然後</p>
+<p>126<br/>00:06:03,320 --&gt; 00:06:06,140<br/>這邊。啊，我是keyframe玩。</p>
+<p>127<br/>00:06:06,720 --&gt; 00:06:09,540<br/>好，這個是佛scratch吐，然後我這裡再加一。</p>
+<p>128<br/>00:06:10,110 --&gt; 00:06:13,020<br/>我覺得在嘉儀個告訴他說這個是否</p>
+<p>129<br/>00:06:13,030 --&gt; 00:06:16,030<br/>scrum玩？好，所以我就可以把</p>
+<p>130<br/>00:06:16,040 --&gt; 00:06:18,680<br/>這個存起來，這個是scrum。</p>
+<p>131<br/>00:06:21,050 --&gt; 00:06:23,400<br/>萬的這個private key</p>
+<p>132<br/>00:06:23,830 --&gt; 00:06:26,620<br/>好，所以你假如看這個所謂</p>
+<p>133<br/>00:06:27,120 --&gt; 00:06:30,010<br/>的第一個P啊，就是菩提啊。好，</p>
+<p>134<br/>00:06:30,020 --&gt; 00:06:32,1000<br/>所以它是菩提的private key。好，所以我先把它</p>
+<p>135<br/>00:06:33,010 --&gt; 00:06:35,680<br/>存起來好，那你基本上只需要</p>
+<p>136<br/>00:06:35,690 --&gt; 00:06:38,690<br/>存這個private key就可以。啊，可是</p>
+<p>137<br/>00:06:38,700 --&gt; 00:06:41,350<br/>問題是我們這把private key呀，只能</p>
+<p>138<br/>00:06:41,360 --&gt; 00:06:43,970<br/>在菩提的這個架構下</p>
+<p>139<br/>00:06:43,980 --&gt; 00:06:46,970<br/>來使用。好，假如你想要。</p>
+<p>140<br/>00:06:47,690 --&gt; 00:06:50,480<br/>把他轉成ID SA，也就是所謂open</p>
+<p>141<br/>00:06:50,490 --&gt; 00:06:53,470<br/>SSH的啊，這個那么private</p>
+<p>142<br/>00:06:53,480 --&gt; 00:06:55,390<br/>key的話，你必須要用這個。</p>
+<p>143<br/>00:06:56,620 --&gt; 00:06:59,620<br/>OK，好，所以我們把它轉移下，我們把他</p>
+<p>144<br/>00:06:59,630 --&gt; 00:07:02,260<br/>轉了export export這個private key出來。</p>
+<p>145<br/>00:07:02,1000 --&gt; 00:07:05,530<br/>這個。好，我們要</p>
+<p>146<br/>00:07:05,660 --&gt; 00:07:08,230<br/>把它拿出來叫做ID SA</p>
+<p>147<br/>00:07:08,460 --&gt; 00:07:11,240<br/>好，所以它這邊也是一樣好確定</p>
+<p>148<br/>00:07:11,250 --&gt; 00:07:14,090<br/>一下，所以這裡面我們一樣存在scrum玩，可是</p>
+<p>149<br/>00:07:14,100 --&gt; 00:07:16,880<br/>我要把它存在ID。R</p>
+<p>150<br/>00:07:16,890 --&gt; 00:07:19,520<br/>SA，我要存成TXT，因為待會我要傳</p>
+<p>151<br/>00:07:19,530 --&gt; 00:07:22,520<br/>上去啊，我要用download用把</p>
+<p>152<br/>00:07:22,530 --&gt; 00:07:25,220<br/>它upload到他的download S的目錄下，</p>
+<p>153<br/>00:07:25,390 --&gt; 00:07:28,380<br/>所以我這個要存起來好，那這樣應該就OK了，</p>
+<p>154<br/>00:07:28,390 --&gt; 00:07:31,260<br/>這個就沒沒有問題了，好，那剩下來你還</p>
+<p>155<br/>00:07:31,270 --&gt; 00:07:33,960<br/>需要一個檔案，好這個檔案</p>
+<p>156<br/>00:07:33,970 --&gt; 00:07:36,960<br/>叫做叫做host，然後我們這邊</p>
+<p>157<br/>00:07:36,970 --&gt; 00:07:39,960<br/>是GitHub com，因為剛剛你講的有仔細看</p>
+<p>158<br/>00:07:39,970 --&gt; 00:07:42,600<br/>的話，我們要傳上去的</p>
+<p>159<br/>00:07:42,610 --&gt; 00:07:45,340<br/>這個rap它這邊呢</p>
+<p>160<br/>00:07:45,350 --&gt; 00:07:48,260<br/>有沒有？它是用。他是用給他打com</p>
+<p>161<br/>00:07:48,270 --&gt; 00:07:51,180<br/>來當代號的。OK，</p>
+<p>162<br/>00:07:51,210 --&gt; 00:07:54,120<br/>好，所以我們在近端這裡就要把它處理好，</p>
+<p>163<br/>00:07:54,410 --&gt; 00:07:57,140<br/>所以我們的host就要給他打com我們的</p>
+<p>164<br/>00:07:57,150 --&gt; 00:07:59,840<br/>user。這個是GitHub</p>
+<p>165<br/>00:07:59,850 --&gt; 00:08:02,700<br/>規定的喔，所以一定要get，因為你</p>
+<p>166<br/>00:08:02,710 --&gt; 00:08:05,460<br/>待會兒用遠端登入，你是用git當帳號</p>
+<p>167<br/>00:08:05,470 --&gt; 00:08:08,460<br/>登錄好，那你要連到哪裡？所以我們的Hostname</p>
+<p>168<br/>00:08:08,470 --&gt; 00:08:11,350<br/>是要連到GitHub com好，所以</p>
+<p>169<br/>00:08:11,360 --&gt; 00:08:14,180<br/>這個我們也把它存起來，那這個一樣要丟到</p>
+<p>170<br/>00:08:14,190 --&gt; 00:08:16,920<br/>點H下面，所以我們一樣把它</p>
+<p>171<br/>00:08:16,930 --&gt; 00:08:19,930<br/>存在。我們</p>
+<p>172<br/>00:08:19,940 --&gt; 00:08:22,350<br/>剛才的這個下面的這個，</p>
+<p>173<br/>00:08:22,700 --&gt; 00:08:25,230<br/>可是我要把它叫做config點TXT。</p>
+<p>174<br/>00:08:26,980 --&gt; 00:08:29,710<br/>OK，所以這裡面呢，就是說你的檢視，</p>
+<p>175<br/>00:08:29,720 --&gt; 00:08:32,470<br/>假如看不到副檔名的話，</p>
+<p>176<br/>00:08:32,640 --&gt; 00:08:34,870<br/>你很容易啊，以為。</p>
+<p>177<br/>00:08:36,020 --&gt; 00:08:38,890<br/>他這個檔案沒有副檔名，所以你會加點TXT</p>
+<p>178<br/>00:08:38,900 --&gt; 00:08:41,450<br/>點TFT好，那你到時候就會</p>
+<p>179<br/>00:08:41,460 --&gt; 00:08:43,990<br/>搞錯啊。所以記得妳在</p>
+<p>180<br/>00:08:44,140 --&gt; 00:08:46,930<br/>近端的部分呢？第一時間你</p>
+<p>181<br/>00:08:46,940 --&gt; 00:08:49,470<br/>一定要把檢視的這2個把他</p>
+<p>182<br/>00:08:49,840 --&gt; 00:08:52,810<br/>勾起來，一方面要看到隱藏檔，二</p>
+<p>183<br/>00:08:52,820 --&gt; 00:08:55,770<br/>方面要看到附檔名，否則你很容易犯錯了，</p>
+<p>184<br/>00:08:55,780 --&gt; 00:08:58,480<br/>你到時候不曉得說為什麼可以，</p>
+<p>185<br/>00:08:58,520 --&gt; 00:09:01,250<br/>為什麼不行？好，所以我們現在就是要把</p>
+<p>186<br/>00:09:01,260 --&gt; 00:09:04,190<br/>它upload上去，所以up上去啊，我們這邊已經</p>
+<p>187<br/>00:09:04,200 --&gt; 00:09:07,030<br/>啟動。我們已經啟動了</p>
+<p>188<br/>00:09:07,040 --&gt; 00:09:09,550<br/>這個rap的這個動態</p>
+<p>189<br/>00:09:09,980 --&gt; 00:09:12,930<br/>好，所以我們應該可以把它upload</p>
+<p>190<br/>00:09:12,940 --&gt; 00:09:15,670<br/>到這邊來，所以我們選我們選</p>
+<p>191<br/>00:09:15,680 --&gt; 00:09:18,270<br/>近端剛剛是在F嘛，對不對？所以我們就</p>
+<p>192<br/>00:09:18,280 --&gt; 00:09:21,190<br/>跑到這裡的，這裡我們要把這</p>
+<p>193<br/>00:09:21,200 --&gt; 00:09:24,180<br/>2個檔案把它船上去。好，</p>
+<p>194<br/>00:09:24,190 --&gt; 00:09:27,190<br/>那這2個檔案一旦傳上去啊，我們要執行一各</p>
+<p>195<br/>00:09:27,270 --&gt; 00:09:30,260<br/>fsh點py，把它搬到正對應的</p>
+<p>196<br/>00:09:30,460 --&gt; 00:09:33,410<br/>啊，這個對的地方好，所以我們把這2個</p>
+<p>197<br/>00:09:33,410 --&gt; 00:09:36,270<br/>丟上去。好，那上去之後我們</p>
+<p>198<br/>00:09:36,280 --&gt; 00:09:39,170<br/>看一下他有沒有SSH。他</p>
+<p>199<br/>00:09:39,180 --&gt; 00:09:41,430<br/>應該有啦，我們這邊應該會有</p>
+<p>200<br/>00:09:41,440 --&gt; 00:09:42,990<br/>SSH在那裡。</p>
+<p>201<br/>00:09:44,620 --&gt; 00:09:45,920<br/>糟糕，好像沒有欸。</p>
+<p>202<br/>00:09:47,1000 --&gt; 00:09:50,790<br/>好像沒有好，那我們抓一下</p>
+<p>203<br/>00:09:50,880 --&gt; 00:09:53,640<br/>我們的sh點PY，應該這邊有。</p>
+<p>204<br/>00:09:54,230 --&gt; 00:09:56,800<br/>所以我們跑過來看一下它這邊</p>
+<p>205<br/>00:09:56,810 --&gt; 00:09:59,660<br/>有沒有？Shsh</p>
+<p>206<br/>00:09:59,670 --&gt; 00:10:02,650<br/>點PY。我這邊</p>
+<p>207<br/>00:10:02,660 --&gt; 00:10:04,950<br/>也沒有。那誰會友？</p>
+<p>208<br/>00:10:05,760 --&gt; 00:10:08,760<br/>呃，我看一下我們這邊看一下。</p>
+<p>209<br/>00:10:09,430 --&gt; 00:10:10,300<br/>哪一各？</p>
+<p>210<br/>00:10:11,730 --&gt; 00:10:14,540<br/>應該在分組倉儲，這裡應該會</p>
+<p>211<br/>00:10:14,550 --&gt; 00:10:16,820<br/>有吧？看一下。</p>
+<p>212<br/>00:10:18,040 --&gt; 00:10:20,450<br/>這個是在wms下。</p>
+<p>213<br/>00:10:24,800 --&gt; 00:10:27,770<br/>哎，在這裡。好，所以我們需要</p>
+<p>214<br/>00:10:27,780 --&gt; 00:10:30,240<br/>這個。所以我們要把。</p>
+<p>215<br/>00:10:31,820 --&gt; 00:10:34,580<br/>這個扣下來啊，我們要丟到，哎，這邊</p>
+<p>216<br/>00:10:34,590 --&gt; 00:10:36,090<br/>應該理論上會有哇。</p>
+<p>217<br/>00:10:39,240 --&gt; 00:10:42,240<br/>哎竟然沒有好，我們馬上嘉儀，所以</p>
+<p>218<br/>00:10:42,250 --&gt; 00:10:44,930<br/>你必須要放在外面好，所以你點他？</p>
+<p>219<br/>00:10:45,540 --&gt; 00:10:47,830<br/>我們看看有沒有sh點PY？</p>
+<p>220<br/>00:10:49,260 --&gt; 00:10:52,050<br/>好，所以我們把它貼上來哪這個S點</p>
+<p>221<br/>00:10:52,060 --&gt; 00:10:53,780<br/>py啊，其實它就是。</p>
+<p>222<br/>00:10:54,920 --&gt; 00:10:57,480<br/>會去檢查你有沒有home</p>
+<p>223<br/>00:10:57,490 --&gt; 00:10:59,870<br/>runner下面的點S目錄，</p>
+<p>224<br/>00:11:00,080 --&gt; 00:11:02,180<br/>假如沒有的話，它會自動幫你降。</p>
+<p>225<br/>00:11:03,140 --&gt; 00:11:05,550<br/>OK，然後接著就把</p>
+<p>226<br/>00:11:05,560 --&gt; 00:11:07,940<br/>我們的。檔案啊，把它</p>
+<p>227<br/>00:11:07,970 --&gt; 00:11:10,830<br/>搬到正確的地方喔，</p>
+<p>228<br/>00:11:10,840 --&gt; 00:11:13,820<br/>所以這裡你看我們一開始就計畫好要</p>
+<p>229<br/>00:11:13,830 --&gt; 00:11:16,720<br/>交貼。然後他第六行會</p>
+<p>230<br/>00:11:16,730 --&gt; 00:11:19,500<br/>幫我們的權限那把它弄好，因為</p>
+<p>231<br/>00:11:19,510 --&gt; 00:11:21,700<br/>只有你可以看。</p>
+<p>232<br/>00:11:23,110 --&gt; 00:11:26,100<br/>可以讀可以寫其他人都不行，假如你沒有</p>
+<p>233<br/>00:11:26,110 --&gt; 00:11:28,550<br/>第六行的話，其實這把proxies不能用。</p>
+<p>234<br/>00:11:29,270 --&gt; 00:11:32,220<br/>好，所以這個好了之後啊，我們就必須要</p>
+<p>235<br/>00:11:32,230 --&gt; 00:11:35,040<br/>來執行用Python三來執行</p>
+<p>236<br/>00:11:35,050 --&gt; 00:11:36,420<br/>SSH點py。</p>
+<p>237<br/>00:11:37,780 --&gt; 00:11:40,390<br/>哦，那他已經把他搬走了，好，那我們講要</p>
+<p>238<br/>00:11:40,400 --&gt; 00:11:43,210<br/>檢查的話你可以往上跳，然後</p>
+<p>239<br/>00:11:43,220 --&gt; 00:11:45,880<br/>到SSH。然後</p>
+<p>240<br/>00:11:45,890 --&gt; 00:11:48,840<br/>看看是不事。就定位了</p>
+<p>241<br/>00:11:49,130 --&gt; 00:11:52,040<br/>好那假如是的話，其實你就有權限了，</p>
+<p>242<br/>00:11:52,050 --&gt; 00:11:54,940<br/>意思就是說，所以在這裡你要跳回他的</p>
+<p>243<br/>00:11:54,950 --&gt; 00:11:57,640<br/>倉儲試用ESET。啊啊，這個只有在</p>
+<p>244<br/>00:11:57,650 --&gt; 00:12:00,130<br/>rap好，所以我們應該可以成功了。</p>
+<p>245<br/>00:12:01,670 --&gt; 00:12:03,940<br/>OK就這樣，所以我們這個影片先</p>
+<p>246<br/>00:12:04,350 --&gt; 00:12:07,280<br/>啊，讓你把這個分組</p>
+<p>247<br/>00:12:07,290 --&gt; 00:12:10,140<br/>的倉儲啊，假如你要用replay</p>
+<p>248<br/>00:12:10,150 --&gt; 00:12:12,360<br/>來處理的話，因為這邊沒有時間限制。</p>
+<p>249<br/>00:12:12,990 --&gt; 00:12:15,660<br/>好，所以相對來講，你可以慢慢的</p>
+<p>250<br/>00:12:15,700 --&gt; 00:12:18,690<br/>邪王字慢慢的處理。好，雖然他</p>
+<p>251<br/>00:12:18,700 --&gt; 00:12:21,470<br/>資源感覺比較慢，可是它的介面還</p>
+<p>252<br/>00:12:21,500 --&gt; 00:12:23,870<br/>還算OK好，所以我們就把</p>
+<p>253<br/>00:12:24,180 --&gt; 00:12:26,990<br/>這樣的一個人那么權限</p>
+<p>254<br/>00:12:26,1000 --&gt; 00:12:29,790<br/>設定啊，把它存起來好，那</p>
+<p>255<br/>00:12:29,800 --&gt; 00:12:32,710<br/>這裡面呢？很重要的一點就是你到時候</p>
+<p>256<br/>00:12:32,720 --&gt; 00:12:35,630<br/>假如把資料推到啊，把他Chrome</p>
+<p>257<br/>00:12:35,640 --&gt; 00:12:38,590<br/>到近端的話，欸，你的這個key是可以</p>
+<p>258<br/>00:12:38,600 --&gt; 00:12:41,190<br/>用的，對不對？因為到時候你再設</p>
+<p>259<br/>00:12:41,200 --&gt; 00:12:43,690<br/>session的時候，你的這一把</p>
+<p>260<br/>00:12:43,860 --&gt; 00:12:46,360<br/>private key就可以表明身份。</p>
+<p>261<br/>00:12:47,710 --&gt; 00:12:50,670<br/>OK。好，所以我們這邊的意思就是說，</p>
+<p>262<br/>00:12:50,680 --&gt; 00:12:52,570<br/>你今天假如是用</p>
+<p>263<br/>00:12:52,760 --&gt; 00:12:55,540<br/>自己的欸Ripley的帳號</p>
+<p>264<br/>00:12:55,900 --&gt; 00:12:58,790<br/>CD 2024是沒有問題的，可是</p>
+<p>265<br/>00:12:58,800 --&gt; 00:13:01,770<br/>分組網站的話，你就是要經過剛剛的這個</p>
+<p>266<br/>00:13:01,780 --&gt; 00:13:04,740<br/>處理。好，那么才能夠運作好，</p>
+<p>267<br/>00:13:04,750 --&gt; 00:13:05,900<br/>那我們把他拍下來。</p><br />2b w5 << <a href='2b w5.html'>Previous</a> <a href='期中報告.html'>Next</a> >> 期中報告</div>
+
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
