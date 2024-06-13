@@ -1,0 +1,371 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsimde_site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H2">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>41023211</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">41023211</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='cmsimde.html'>cmsimde</a><li><a href='Replit.html'>Replit</a><li><a href='Brython.html'>Brython</a><li class='has-children'><a href='practice.html'>practice</a><ul class='dropdown'><li><a href='W3 Task.html'>W3 Task</a><li><a href='w4 task.html'>w4 task</a><li><a href='w5 Task.html'>w5 Task</a><li><a href='w6 Task.html'>w6 Task</a><li><a href='w10 task程式.html'>w10 task程式</a><li><a href='w10 task影片.html'>w10 task影片</a></li></ul><li><a href='英翻中.html'>英翻中</a><li class='has-children'><a href='影片.html'>影片</a><ul class='dropdown'><li><a href='w1 setup.html'>w1 setup</a><li><a href='w1 odoo.html'>w1 odoo</a><li><a href='w1 2b 3.html'>w1 2b 3</a><li><a href='w1 2b 2.html'>w1 2b 2</a><li><a href='w1 2b 1.html'>w1 2b 1</a><li><a href='w1 2b 4.html'>w1 2b 4</a><li><a href='2b w5.html'>2b w5</a><li><a href='2a w5.html'>2a w5</a><li><a href='2a w6.html'>2a w6</a><li><a href='2a w6第二部(1).html'>2a w6第二部(1)</a><li><a href='2a w6第二部(2).html'>2a w6第二部(2)</a><li><a href='2a w6 第三部(1).html'>2a w6 第三部(1)</a><li><a href='2a w6第三部(2).html'>2a w6第三部(2)</a></li></ul><li><a href='期中報告.html'>期中報告</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+
+        </header>
+    <div id="tipue_search_content">2a w6 第三部(1) << <a href='2a w6 第三部(1).html'>Previous</a> <a href='期中報告.html'>Next</a> >> 期中報告<br /><h1>2a w6第三部(2)</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9mlOGCUx6Js?si=944FYj4w1-iRUaQZ" title="YouTube video player" width="560"></iframe></p>
+<p>1<br/>00:00:00,088 --&gt; 00:00:00,368<br/>吧？</p>
+<p>2<br/>00:00:06,358 --&gt; 00:00:08,808<br/>有沒有還有？這裡就有。</p>
+<p>3<br/>00:00:09,888 --&gt; 00:00:11,458<br/>好，所以我們找一下。</p>
+<p>4<br/>00:00:13,158 --&gt; 00:00:15,768<br/>哎。對呀，在這裡，</p>
+<p>5<br/>00:00:16,198 --&gt; 00:00:19,118<br/>所以我們需要的是改這個。哦，</p>
+<p>6<br/>00:00:19,128 --&gt; 00:00:22,108<br/>所以我們假如現在就要做的話，我們就可以把</p>
+<p>7<br/>00:00:22,118 --&gt; 00:00:24,698<br/>這個弄進。可是這個弄</p>
+<p>8<br/>00:00:24,708 --&gt; 00:00:27,468<br/>進來啊，我不曉得各族，我們先轉移次。</p>
+<p>9<br/>00:00:29,288 --&gt; 00:00:31,268<br/>好，所以我這邊呢，我就把。</p>
+<p>10<br/>00:00:32,808 --&gt; 00:00:34,958<br/>這個答案啊。Ctrl A ctrl C下。</p>
+<p>11<br/>00:00:35,848 --&gt; 00:00:38,838<br/>然後我檢查一下它是不是有把它弄上去，有</p>
+<p>12<br/>00:00:38,848 --&gt; 00:00:41,768<br/>它丟上去。好，所以我就必須帶出</p>
+<p>13<br/>00:00:41,778 --&gt; 00:00:43,358<br/>啊這個縣有地。</p>
+<p>14<br/>00:00:44,748 --&gt; 00:00:47,578<br/>帶出現有的這個palicon config。</p>
+<p>15<br/>00:00:51,598 --&gt; 00:00:54,478<br/>在這裡，這個帶出來。我必須</p>
+<p>16<br/>00:00:54,488 --&gt; 00:00:57,468<br/>要把它做修改。所以我</p>
+<p>17<br/>00:00:57,478 --&gt; 00:00:59,828<br/>先把他。寧夏。</p>
+<p>18<br/>00:01:01,088 --&gt; 00:01:02,708<br/>所以我從哪裡開始改呢？</p>
+<p>19<br/>00:01:05,108 --&gt; 00:01:07,568<br/>我必須要從我把</p>
+<p>20<br/>00:01:07,868 --&gt; 00:01:10,598<br/>number秀出。因為</p>
+<p>21<br/>00:01:10,608 --&gt; 00:01:12,488<br/>前面一定是他加上去。</p>
+<p>22<br/>00:01:13,358 --&gt; 00:01:15,848<br/>所以我在markdown後面在path後面。</p>
+<p>23<br/>00:01:17,418 --&gt; 00:01:19,598<br/>我在pass後mhev道。</p>
+<p>24<br/>00:01:20,268 --&gt; 00:01:22,948<br/>結束這。到弄。</p>
+<p>25<br/>00:01:24,178 --&gt; 00:01:26,808<br/>我需要最短。好，所以我把卡車</p>
+<p>26<br/>00:01:26,818 --&gt; 00:01:29,648<br/>西下。所以這個時候我的pad</p>
+<p>27<br/>00:01:29,828 --&gt; 00:01:31,298<br/>有沒有這個這2個？</p>
+<p>28<br/>00:01:32,678 --&gt; 00:01:33,618<br/>好所以A。</p>
+<p>29<br/>00:01:39,948 --&gt; 00:01:42,638<br/>好，沒關係，我就直接把它貼在</p>
+<p>30<br/>00:01:42,668 --&gt; 00:01:43,348<br/>path home。</p>
+<p>31<br/>00:01:46,378 --&gt; 00:01:49,008<br/>可是問題，你這個時候啊，必須要把。</p>
+<p>32<br/>00:01:50,378 --&gt; 00:01:53,228<br/>分組的那哥大好，我們現在先抓一個人</p>
+<p>33<br/>00:01:53,238 --&gt; 00:01:56,108<br/>出來就好。喔，這個後面你在自己家。</p>
+<p>34<br/>00:01:56,818 --&gt; 00:01:57,978<br/>我們先抓。</p>
+<p>35<br/>00:02:00,068 --&gt; 00:02:02,018<br/>其中一個人，也就是</p>
+<p>36<br/>00:02:02,028 --&gt; 00:02:04,898<br/>41023156這個。因為他的</p>
+<p>37<br/>00:02:04,908 --&gt; 00:02:07,388<br/>markdown。裡面有三篇</p>
+<p>38<br/>00:02:07,628 --&gt; 00:02:10,038<br/>哦，可是他還沒有加上他的學號哦。</p>
+<p>39<br/>00:02:10,768 --&gt; 00:02:12,828<br/>好，所以我們要把這個加進。</p>
+<p>40<br/>00:02:16,618 --&gt; 00:02:18,918<br/>你要把它加進。我們在抓。</p>
+<p>41<br/>00:02:19,848 --&gt; 00:02:22,178<br/>第2個的話，那第2個的話你就在</p>
+<p>42<br/>00:02:22,468 --&gt; 00:02:25,418<br/>逗點，他是數列嘛，他會一格一</p>
+<p>43<br/>00:02:25,428 --&gt; 00:02:28,228<br/>格。好，那我們看看有可能</p>
+<p>44<br/>00:02:28,238 --&gt; 00:02:31,048<br/>就會衝突了。好看，第2個</p>
+<p>45<br/>00:02:31,188 --&gt; 00:02:31,648<br/>5號。</p>
+<p>46<br/>00:02:33,798 --&gt; 00:02:36,668<br/>哦，他這個就會蓋過去。好像</p>
+<p>47<br/>00:02:36,678 --&gt; 00:02:38,808<br/>不管了。我們就讓他蓋過去。</p>
+<p>48<br/>00:02:41,138 --&gt; 00:02:43,688<br/>好，那這樣的話我就可以把它</p>
+<p>49<br/>00:02:43,698 --&gt; 00:02:44,138<br/>加進來。</p>
+<p>50<br/>00:02:49,508 --&gt; 00:02:51,618<br/>OK，好，所以現在只加兩位。</p>
+<p>51<br/>00:02:52,418 --&gt; 00:02:54,958<br/>那我們就再轉一次就看看好，所以</p>
+<p>52<br/>00:02:55,428 --&gt; 00:02:58,318<br/>這個時候啊，我們在轉移次看他會做甚。</p>
+<p>53<br/>00:03:02,488 --&gt; 00:03:02,898<br/>在這裡。</p>
+<p>54<br/>00:03:09,458 --&gt; 00:03:12,108<br/>然後不是在這裡轉好，沒關係，我們</p>
+<p>55<br/>00:03:12,118 --&gt; 00:03:14,968<br/>就把那個jumbo我們jumbo這樣</p>
+<p>56<br/>00:03:15,068 --&gt; 00:03:17,778<br/>在這。就叫jumbo就好啦。</p>
+<p>57<br/>00:03:18,398 --&gt; 00:03:19,948<br/>所以我們就只需要。</p>
+<p>58<br/>00:03:21,228 --&gt; 00:03:24,138<br/>在這裡用Jane，因為我沒有批次檔嘛，</p>
+<p>59<br/>00:03:24,148 --&gt; 00:03:26,758<br/>剛剛寫。好，所以他就搞欸。</p>
+<p>60<br/>00:03:28,288 --&gt; 00:03:30,348<br/>喔。這個時候欸，</p>
+<p>61<br/>00:03:30,788 --&gt; 00:03:33,778<br/>他在執行的過程，他會幫我們建一</p>
+<p>62<br/>00:03:33,788 --&gt; 00:03:36,198<br/>個。會幫我們建立一個目錄。</p>
+<p>63<br/>00:03:37,908 --&gt; 00:03:38,338<br/>有嘛？</p>
+<p>64<br/>00:03:46,818 --&gt; 00:03:49,298<br/>哇，因為應該要有一各</p>
+<p>65<br/>00:03:49,308 --&gt; 00:03:49,858<br/>combine。</p>
+<p>66<br/>00:04:03,468 --&gt; 00:04:05,208<br/>所以這個時候啊，應該。</p>
+<p>67<br/>00:04:07,248 --&gt; 00:04:10,148<br/>只要我們自己家。哎，那我這邊</p>
+<p>68<br/>00:04:10,158 --&gt; 00:04:10,968<br/>可能沒有執行。</p>
+<p>69<br/>00:04:37,148 --&gt; 00:04:39,978<br/>試試看哈。感覺</p>
+<p>70<br/>00:04:39,988 --&gt; 00:04:41,668<br/>好像他沒有進去幫我們。</p>
+<p>71<br/>00:04:42,898 --&gt; 00:04:45,668<br/>好像沒有幫我們做複製的動作？</p>
+<p>72<br/>00:04:48,778 --&gt; 00:04:51,668<br/>對他沒有。他</p>
+<p>73<br/>00:04:51,678 --&gt; 00:04:53,458<br/>沒有幫我們做複製的動作。</p>
+<p>74<br/>00:04:57,518 --&gt; 00:05:00,278<br/>好，所以我這邊不曉得，現在錯在</p>
+<p>75<br/>00:05:00,288 --&gt; 00:05:00,538<br/>哪裡？</p>
+<p>76<br/>00:05:05,738 --&gt; 00:05:07,588<br/>這邊可能要先暫停一下。</p>
+<p>77<br/>00:05:08,988 --&gt; 00:05:11,038<br/>造假，因為他直行到這邊了。</p>
+<p>78<br/>00:05:12,688 --&gt; 00:05:13,738<br/>喔，我沒有存啦。</p>
+<p>79<br/>00:05:15,308 --&gt; 00:05:17,868<br/>存檔。好，所以我把它存起來。</p>
+<p>80<br/>00:05:18,578 --&gt; 00:05:20,888<br/>所以理論上我不不需要自己。</p>
+<p>81<br/>00:05:22,208 --&gt; 00:05:24,528<br/>自己家這個，而是應該要改。</p>
+<p>82<br/>00:05:25,968 --&gt; 00:05:28,698<br/>我這邊必須要改，他是從新的。</p>
+<p>83<br/>00:05:30,788 --&gt; 00:05:33,688<br/>所以我變成James Brown。你要</p>
+<p>84<br/>00:05:33,698 --&gt; 00:05:36,528<br/>拉jumbo出來改成拉，它會從分組的</p>
+<p>85<br/>00:05:36,838 --&gt; 00:05:39,558<br/>喔這個路徑。好，最後把jumbo</p>
+<p>86<br/>00:05:39,988 --&gt; 00:05:42,808<br/>這裡改一下。我現在不是直接</p>
+<p>87<br/>00:05:43,168 --&gt; 00:05:45,948<br/>指出嘛。我必需要</p>
+<p>88<br/>00:05:45,958 --&gt; 00:05:48,828<br/>從這個。新的</p>
+<p>89<br/>00:05:48,838 --&gt; 00:05:50,438<br/>這個comeback就是。</p>
+<p>90<br/>00:05:51,628 --&gt; 00:05:54,588<br/>可是我這個要存成啊新的，所以</p>
+<p>91<br/>00:05:54,598 --&gt; 00:05:56,988<br/>你這裡要存的話你要存成。</p>
+<p>92<br/>00:05:58,418 --&gt; 00:06:00,468<br/>協同啊，我們把它叫做CB。</p>
+<p>93<br/>00:06:03,988 --&gt; 00:06:06,098<br/>好，所以這樣的話看看他可不可以？</p>
+<p>94<br/>00:06:07,188 --&gt; 00:06:08,938<br/>所以我們就。</p>
+<p>95<br/>00:06:14,868 --&gt; 00:06:17,758<br/>所以這邊的意思就是說。你</p>
+<p>96<br/>00:06:17,768 --&gt; 00:06:20,738<br/>這邊呢，原先是從markdown。他這個</p>
+<p>97<br/>00:06:20,748 --&gt; 00:06:23,068<br/>指令的意思是用Pelican當工具。</p>
+<p>98<br/>00:06:23,968 --&gt; 00:06:26,938<br/>然後他會從這個目錄裡面去抓。</p>
+<p>99<br/>00:06:28,438 --&gt; 00:06:30,998<br/>所有的點MD。那這個點</p>
+<p>100<br/>00:06:31,008 --&gt; 00:06:33,468<br/>nd啊，因為我們用的local</p>
+<p>101<br/>00:06:33,478 --&gt; 00:06:36,258<br/>publish這個設定檔，我們把他抓出來給你</p>
+<p>102<br/>00:06:36,268 --&gt; 00:06:39,008<br/>看。我們的local</p>
+<p>103<br/>00:06:39,018 --&gt; 00:06:41,808<br/>publish這個。他在執行</p>
+<p>104<br/>00:06:41,818 --&gt; 00:06:44,758<br/>到第11航的時候。會把</p>
+<p>105<br/>00:06:44,768 --&gt; 00:06:47,648<br/>Pelican config這個Python把他抓進</p>
+<p>106<br/>00:06:47,658 --&gt; 00:06:49,608<br/>來，所以他其實就是在這裡做複製。</p>
+<p>107<br/>00:06:50,928 --&gt; 00:06:53,258<br/>哦，只要正常的話，然後我們看看會不會？</p>
+<p>108<br/>00:06:56,398 --&gt; 00:06:58,978<br/>我這個他就檔名了嘛，所以這裡</p>
+<p>109<br/>00:06:58,988 --&gt; 00:07:01,408<br/>就是沒有協調好的部分。</p>
+<p>110<br/>00:07:02,058 --&gt; 00:07:04,068<br/>他有2個。有沒有？</p>
+<p>111<br/>00:07:05,038 --&gt; 00:07:07,968<br/>2個的黨營一模一樣。啊，一各</p>
+<p>112<br/>00:07:07,978 --&gt; 00:07:10,858<br/>是在哪一個？啊，</p>
+<p>113<br/>00:07:10,868 --&gt; 00:07:13,558<br/>這個stock也沒改呢，所以這邊就是</p>
+<p>114<br/>00:07:13,568 --&gt; 00:07:15,408<br/>出問題，那我們先除掉一各。</p>
+<p>115<br/>00:07:16,688 --&gt; 00:07:19,478<br/>我們2個2個組員馬上就</p>
+<p>116<br/>00:07:19,488 --&gt; 00:07:22,278<br/>出問題對不對？那我們就。</p>
+<p>117<br/>00:07:22,888 --&gt; 00:07:25,558<br/>把第2個主要拿掉。好，我們先</p>
+<p>118<br/>00:07:25,568 --&gt; 00:07:28,478<br/>處理一各，這個應該就沒衝突了吧？好，</p>
+<p>119<br/>00:07:28,488 --&gt; 00:07:31,388<br/>所以這個把它存起。好，</p>
+<p>120<br/>00:07:31,398 --&gt; 00:07:34,288<br/>然後我們再轉移次從這個comebuy</p>
+<p>121<br/>00:07:34,298 --&gt; 00:07:35,918<br/>的這個目錄來轉。</p>
+<p>122<br/>00:07:39,118 --&gt; 00:07:41,888<br/>為什麼會這樣？喔，他跟那哥</p>
+<p>123<br/>00:07:42,068 --&gt; 00:07:44,908<br/>分組的。好，那我們</p>
+<p>124<br/>00:07:44,918 --&gt; 00:07:47,708<br/>不要說，我們不要抓這個，我們不要抓</p>
+<p>125<br/>00:07:47,718 --&gt; 00:07:50,688<br/>自己，我們抓他的。總要</p>
+<p>126<br/>00:07:50,698 --&gt; 00:07:53,488<br/>能轉吧？好，我們在抓</p>
+<p>127<br/>00:07:53,498 --&gt; 00:07:56,118<br/>他的。好，所以在存疑次。</p>
+<p>128<br/>00:07:57,978 --&gt; 00:08:00,648<br/>然後我們在轉移次好，所以這裡面</p>
+<p>129<br/>00:08:00,658 --&gt; 00:08:03,508<br/>你們開會就要把它協調好了。</p>
+<p>130<br/>00:08:04,108 --&gt; 00:08:06,958<br/>他有三篇嘛。對吧，在這裡哪這邊</p>
+<p>131<br/>00:08:06,968 --&gt; 00:08:09,898<br/>你？因為檔名一樣，這裡不行，他一</p>
+<p>132<br/>00:08:09,908 --&gt; 00:08:12,788<br/>抓過來之後，你只要一個人，現在五篇對不對</p>
+<p>133<br/>00:08:12,998 --&gt; 00:08:15,708<br/>，8個人就40篇哦，所以一定要加上</p>
+<p>134<br/>00:08:15,718 --&gt; 00:08:18,568<br/>學號，2個一定要拆開好，所以我們</p>
+<p>135<br/>00:08:18,578 --&gt; 00:08:21,188<br/>先處理這個把答案給你，所以我們</p>
+<p>136<br/>00:08:21,318 --&gt; 00:08:23,818<br/>現在好了嗎？所以我們</p>
+<p>137<br/>00:08:23,828 --&gt; 00:08:25,698<br/>就可以直接scp了嗎？</p>
+<p>138<br/>00:08:27,698 --&gt; 00:08:30,588<br/>我們利用哪一各組員啊</p>
+<p>139<br/>00:08:30,598 --&gt; 00:08:33,478<br/>是一零。我們</p>
+<p>140<br/>00:08:33,488 --&gt; 00:08:35,038<br/>利用4102。</p>
+<p>141<br/>00:08:35,758 --&gt; 00:08:36,728<br/>3156啊。</p>
+<p>142<br/>00:08:38,528 --&gt; 00:08:40,808<br/>是模組中的。</p>
+<p>143<br/>00:08:45,648 --&gt; 00:08:48,118<br/>作為。範例。</p>
+<p>144<br/>00:08:49,138 --&gt; 00:08:51,808<br/>轉出。對應的</p>
+<p>145<br/>00:08:51,818 --&gt; 00:08:54,518<br/>分組倉分組的這個網誌</p>
+<p>146<br/>00:08:54,958 --&gt; 00:08:57,728<br/>對吧？好，那到時候其實你假如</p>
+<p>147<br/>00:08:57,738 --&gt; 00:09:00,328<br/>是處理零組件也是一樣啊。</p>
+<p>148<br/>00:09:00,998 --&gt; 00:09:03,988<br/>因為你到時候的零件是會在分佈在</p>
+<p>149<br/>00:09:03,998 --&gt; 00:09:05,758<br/>每一個組員的子模組裡面。</p>
+<p>150<br/>00:09:07,178 --&gt; 00:09:08,588<br/>好，所以應該就丟上去了。</p>
+<p>151<br/>00:09:10,108 --&gt; 00:09:13,078<br/>看上去了，那我們假如在近端要看也可以，</p>
+<p>152<br/>00:09:13,228 --&gt; 00:09:16,018<br/>對吧？我們在近端的靜態在這裡嘛，</p>
+<p>153<br/>00:09:16,028 --&gt; 00:09:17,898<br/>所以我們這邊的網誌應該改了。</p>
+<p>154<br/>00:09:18,848 --&gt; 00:09:21,748<br/>是第一位主人的那三篇哦，沒有遭到。</p>
+<p>155<br/>00:09:22,628 --&gt; 00:09:25,288<br/>啊，我們給人家弄掉。人家</p>
+<p>156<br/>00:09:25,298 --&gt; 00:09:28,288<br/>關掉，所以我們這邊CNS他就會</p>
+<p>157<br/>00:09:28,298 --&gt; 00:09:31,128<br/>起來，哪起來之後你還要還要再</p>
+<p>158<br/>00:09:31,138 --&gt; 00:09:33,988<br/>打開。然後我們</p>
+<p>159<br/>00:09:33,998 --&gt; 00:09:36,648<br/>假如在近端要看，因為遠端那邊需要</p>
+<p>160<br/>00:09:36,658 --&gt; 00:09:39,428<br/>轉檔嘛。所以妳可以先在近端這裡</p>
+<p>161<br/>00:09:39,438 --&gt; 00:09:41,758<br/>看。我們這裡必需要進來。</p>
+<p>162<br/>00:09:44,618 --&gt; 00:09:47,328<br/>然後你再啟動start，</p>
+<p>163<br/>00:09:47,358 --&gt; 00:09:49,768<br/>這個可能就不能不知道能不能用你先這樣</p>
+<p>164<br/>00:09:50,268 --&gt; 00:09:53,148<br/>我們把他起來，然後在滑鼠右鍵點這個。</p>
+<p>165<br/>00:09:53,768 --&gt; 00:09:56,758<br/>然後這個時候是在這裡，對吧？相對。</p>
+<p>166<br/>00:09:57,538 --&gt; 00:10:00,028<br/>這個就是他那三篇在這裡，</p>
+<p>167<br/>00:10:00,328 --&gt; 00:10:03,128<br/>所以你們要自己把每一個人的</p>
+<p>168<br/>00:10:03,638 --&gt; 00:10:06,518<br/>點MD呀，以及妳對應的這個。</p>
+<p>169<br/>00:10:07,798 --&gt; 00:10:10,348<br/>那么實際上必需要改一下，</p>
+<p>170<br/>00:10:11,018 --&gt; 00:10:13,628<br/>OK？好，所以基本上</p>
+<p>171<br/>00:10:13,638 --&gt; 00:10:16,358<br/>大概是這樣，所以我們這個影片呢，就是把</p>
+<p>172<br/>00:10:16,368 --&gt; 00:10:19,118<br/>第二組的這個資料，我們把他抓上來，</p>
+<p>173<br/>00:10:19,348 --&gt; 00:10:22,148<br/>demo給各位。好，所以你就趕快</p>
+<p>174<br/>00:10:22,158 --&gt; 00:10:25,078<br/>配合你的這個部分來修改。好，我們</p>
+<p>175<br/>00:10:25,088 --&gt; 00:10:26,238<br/>把它存檔了。</p><br />2a w6 第三部(1) << <a href='2a w6 第三部(1).html'>Previous</a> <a href='期中報告.html'>Next</a> >> 期中報告</div>
+
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
