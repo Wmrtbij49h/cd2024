@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>協同管理設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-21T09:59:12+08:00</updated><entry><title>2a-midag8 2024 Spring 課程w6</title><link href="./2024-Spring-w6-blog-tutorial.html" rel="alternate"></link><published>2024-03-29T15:00:00+08:00</published><updated>2024-04-26T08:59:28+08:00</updated><author><name>41023108 41023211</name></author><id>tag:None,2024-03-29:./2024-Spring-w6-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>協同管理設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-21T10:05:00+08:00</updated><entry><title>2a-midag8 2024 Spring 課程w6</title><link href="./2024-Spring-w6-blog-tutorial.html" rel="alternate"></link><published>2024-03-29T15:00:00+08:00</published><updated>2024-04-26T08:59:28+08:00</updated><author><name>41023108 41023211</name></author><id>tag:None,2024-03-29:./2024-Spring-w6-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 
 &lt;p&gt;第六週實作內容報告&lt;/p&gt;
@@ -30,7 +30,13 @@
 &lt;h1&gt;將個人倉儲 import 至 Replit&lt;/h1&gt;
 &lt;p&gt;設定 Github 帳號的雙重認證
 對個人的githib帳號使用雙重認證，並且與電子產品綁定&lt;/p&gt;
-&lt;h1&gt;利用import 倉儲至 Replit 進行改版&lt;/h1&gt;</content><category term="w1"></category><category term="網誌編寫"></category><category term="pelican"></category></entry><entry><title>2a-midag8 2024 Spring 課程w5</title><link href="./2024-Spring-w5-blog-tutorial.html" rel="alternate"></link><published>2024-03-15T15:00:00+08:00</published><updated>2024-04-26T09:02:03+08:00</updated><author><name>41023108 41023211</name></author><id>tag:None,2024-03-15:./2024-Spring-w5-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
+&lt;h1&gt;利用import 倉儲至 Replit 進行改版&lt;/h1&gt;</content><category term="w1"></category><category term="網誌編寫"></category><category term="pelican"></category></entry><entry><title>2024 Spring 課程w2</title><link href="./2024-Spring-w2-blog-tutorial.html" rel="alternate"></link><published>2024-03-15T15:00:00+08:00</published><updated>2024-06-21T10:05:00+08:00</updated><author><name>41023211</name></author><id>tag:None,2024-03-15:./2024-Spring-w2-blog-tutorial.html</id><summary type="html">&lt;h1&gt;W2&lt;/h1&gt;
+&lt;p&gt;協同產品設計實習的第二週, 主要利用 Github Classroom 進行協同分組, 並引導學員除了 Replit, 可以利用 Github Codespaces 維護個人或分組網站內容 …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;W2&lt;/h1&gt;
+&lt;p&gt;協同產品設計實習的第二週, 主要利用 Github Classroom 進行協同分組, 並引導學員除了 Replit, 可以利用 Github Codespaces 維護個人或分組網站內容.&lt;/p&gt;
+&lt;h1&gt;利用 Github Classroom 指定分組倉儲&lt;/h1&gt;
+&lt;p&gt;指定第八組倉儲&lt;/p&gt;
+&lt;h1&gt;利用 Codespaces 維護倉儲與網站&lt;/h1&gt;
+&lt;p&gt;學習使用Codespaces維護分組倉儲及網站內容&lt;/p&gt;</content><category term="w2"></category><category term="網誌編寫"></category><category term="pelican"></category></entry><entry><title>2a-midag8 2024 Spring 課程w5</title><link href="./2024-Spring-w5-blog-tutorial.html" rel="alternate"></link><published>2024-03-15T15:00:00+08:00</published><updated>2024-04-26T09:02:03+08:00</updated><author><name>41023108 41023211</name></author><id>tag:None,2024-03-15:./2024-Spring-w5-blog-tutorial.html</id><summary type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2024 Spring 網際內容管理與協同產品設計實習課程教學導引.&lt;/p&gt;
 
 &lt;h1&gt;w5&lt;/h1&gt;
