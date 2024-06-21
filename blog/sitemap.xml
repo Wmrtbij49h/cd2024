@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2024-06-21T10:45:00-00:00</lastmod>
+<lastmod>2024-06-21T10:47:40-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2024-06-21T10:45:00-00:00</lastmod>
+<lastmod>2024-06-21T10:47:40-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2024-06-21T10:45:00-00:00</lastmod>
+<lastmod>2024-06-21T10:47:40-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2024-06-21T10:45:00-00:00</lastmod>
+<lastmod>2024-06-21T10:47:40-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -55,6 +55,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>./2024-Spring-w8-blog-tutorial.html</loc>
 <lastmod>2024-06-21T10:44:53+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>./2024-Spring-w9-blog-tutorial.html</loc>
+<lastmod>2024-06-21T10:47:34+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -151,22 +158,29 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>./category/w9.html</loc>
+<lastmod>2024-06-21T10:47:34+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>./tag/wang-zhi-bian-xie.html</loc>
-<lastmod>2024-06-21T10:44:53+08:06</lastmod>
+<lastmod>2024-06-21T10:47:34+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/pelican.html</loc>
-<lastmod>2024-06-21T10:44:53+08:06</lastmod>
+<lastmod>2024-06-21T10:47:34+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./author/41023108-41023211.html</loc>
-<lastmod>2024-06-21T10:44:53+08:06</lastmod>
+<lastmod>2024-06-21T10:47:34+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
